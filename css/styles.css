@@ -123,3 +123,40 @@ main {
   border-radius: 20px;
 }
 
+.tags-graffiti-street-art {
+  padding: ;
+}
+
+.tags-graffiti-street-art ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tags-graffiti-street-art li {
+  width: 100%;
+  height: 90px;
+  padding: 20px;
+  border-bottom: 2px solid;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.tags-graffiti-street-art .hours {
+  vertical-align: middle;
+}
+
+.tags-graffiti-street-art p {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+
+
+.skate {
+
+}
