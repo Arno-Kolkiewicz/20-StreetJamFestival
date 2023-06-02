@@ -6,11 +6,18 @@ body {
   max-width: 375px;
   margin: auto;
   background: #F9E9DE;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .border-high  {
@@ -276,7 +283,7 @@ main {
   position: relative;
   display: flex;
   flex-flow: row nowrap;
-  animation: carousel-text linear 10s infinite;
+  animation: carousel-text linear 5s infinite;
 }
 
 .carousel-text img {
