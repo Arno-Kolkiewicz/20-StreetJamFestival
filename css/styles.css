@@ -283,6 +283,12 @@ main {
   margin: 0 10px;
 }
 
+footer {
+  padding: 40px 10px;
+  background: black;
+  color: white;
+}
+
 @keyframes carousel-text {
   0% {
     transform: translateX(0);
