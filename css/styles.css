@@ -33,7 +33,7 @@ input {
   -webkit-mask-image: linear-gradient(#F9E9DE, transparent);
 }
 
-label {
+.btn-more {
   padding: 5px 20px;
   background: white;
   border-radius: 20px;
@@ -48,6 +48,30 @@ label {
   flex-flow: row nowrap;
   animation: carousel 10s infinite;
   position: relative;
+}
+
+.hourly {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  width: 100%;
+  min-height: 95px;
+  padding: 20px;
+  border-bottom: 2px solid;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.hourly p {
+  margin: 0;
+  padding: 0;
+  width: 50%;
 }
 
 header {
@@ -129,7 +153,10 @@ main {
 }
 
 .street-jam-festival,
-.tags-graffiti-street-art {
+.tags-graffiti-street-art,
+.skate,
+.musique,
+.street-food {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,30 +165,6 @@ main {
 .more-checkbox-street-jam-festival:checked ~ .more-content-street-jam-festival {
   height: 148px;
   -webkit-mask-image: none;
-}
-
-.hourly {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-li {
-  width: 100%;
-  height: 90px;
-  padding: 20px;
-  border-bottom: 2px solid;
-  list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
-
-.hourly p {
-  margin: 0;
-  padding: 0;
-  width: 50%;
 }
 
 .more-checkbox-tags:checked ~ .more-content-tags {
@@ -174,6 +177,55 @@ li {
   -webkit-mask-image: none;
 }
 
+.street-food ul {
+  padding: 0;
+}
+
+.street-food li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.street-food label {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.street-food .arrow {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 8px solid black;
+  border-bottom: 8px solid transparent;
+  transition: 0.7s;
+  transform: rotate(90deg);
+}
+
+.sub-menu {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.sub-menu-checkbox-oh-my-b:checked ~ .sub-menu-oh-my-b {
+  height: 120px;
+  transition: all 2s;
+}
+
+.sub-menu-checkbox-oh-my-b:checked ~ .arrow-oh-my-b {
+  transform: rotate(90deg);
+}
+
+.sub-menu-checkbox-con-cilantro-wey:checked ~ .sub-menu-con-cilantro-wey {
+  height: 120px;
+  transition: all 2s;
+}
+
+.sub-menu-checkbox-con-cilantro-wey:checked ~ .arrow-con-cilantro-wey {
+  transform: scaleY(-1);
+}
 
 @keyframes carousel {
   0%, 20% {
