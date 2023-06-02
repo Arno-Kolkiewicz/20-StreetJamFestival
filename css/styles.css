@@ -2,6 +2,7 @@ body {
   max-width: 375px;
   margin: auto;
   background: #F9E9DE;
+  overflow: hidden;
 }
 
 img {
@@ -13,6 +14,14 @@ img {
   border-top: 2px solid;
 }
 
+p {
+  padding: 0 20px;
+}
+
+input {
+  display: none;
+}
+
 header {
   max-height: 120px;
   padding: 15px;
@@ -20,10 +29,6 @@ header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-}
-
-header .menu-burger-checkbox {
-  display: none;
 }
 
 .menu-burger-checkbox:checked ~ .menu-burger .line-high {
@@ -65,7 +70,7 @@ nav {
   height: 100%;
   position: absolute;
   background: red;
-  overflow: hidde;
+  overflow: hidden;
   left: 0;
   top: 100%;
   transition: all ease-in-out 1s 0.1s;
@@ -90,3 +95,31 @@ nav li {
 .menu-burger-checkbox:checked ~ nav {
   top: 0;
 }
+
+main {
+  padding: 0 10px;
+}
+
+.street-jam-festival {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-content {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+#afficher-plus-checkbox:checked ~ .more-content {
+  height: 148px;
+}
+
+.street-jam-festival label {
+  padding: 5px 20px;
+  background: white;
+  border-radius: 20px;
+}
+
