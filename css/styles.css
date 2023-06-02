@@ -173,8 +173,14 @@ main {
 }
 
 .more-checkbox-skate:checked ~ .more-content-skate {
-  height: 1000px;
+  height: 1200px;
   -webkit-mask-image: none;
+}
+
+.skate .announcement {
+  margin: 20px 0;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .street-food ul {
@@ -200,7 +206,6 @@ main {
   border-left: 8px solid black;
   border-bottom: 8px solid transparent;
   transition: 0.7s;
-  transform: rotate(90deg);
 }
 
 .sub-menu {
@@ -224,7 +229,67 @@ main {
 }
 
 .sub-menu-checkbox-con-cilantro-wey:checked ~ .arrow-con-cilantro-wey {
-  transform: scaleY(-1);
+  transform: rotate(90deg);
+}
+
+.sub-menu-checkbox-frankie-hot-dogs:checked ~ .sub-menu-frankie-hot-dogs {
+  height: 120px;
+  transition: all 2s;
+}
+
+.sub-menu-checkbox-frankie-hot-dogs:checked ~ .arrow-frankie-hot-dogs {
+  transform: rotate(90deg);
+}
+
+.sub-menu-checkbox-poke-paradise:checked ~ .sub-menu-poke-paradise {
+  height: 120px;
+  transition: all 2s;
+}
+
+.sub-menu-checkbox-poke-paradise:checked ~ .arrow-poke-paradise {
+  transform: rotate(90deg);
+}
+
+.sub-menu-checkbox-bretagne-ambulante:checked ~ .sub-menu-bretagne-ambulante {
+  height: 120px;
+  transition: all 2s;
+}
+
+.sub-menu-checkbox-bretagne-ambulante:checked ~ .arrow-bretagne-ambulante {
+  transform: rotate(90deg);
+}
+
+.sub-menu-checkbox-smoothies-stop:checked ~ .sub-menu-smoothies-stop {
+  height: 120px;
+  transition: all 2s;
+}
+
+.sub-menu-checkbox-smoothies-stop:checked ~ .arrow-smoothies-stop {
+  transform: rotate(90deg);
+}
+
+.container-carousel-text {
+  overflow: hidden;
+}
+
+.carousel-text {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  animation: carousel-text linear 10s infinite;
+}
+
+.carousel-text img {
+  margin: 0 10px;
+}
+
+@keyframes carousel-text {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-355px);
+  }
 }
 
 @keyframes carousel {
