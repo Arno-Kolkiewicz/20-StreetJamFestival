@@ -98,6 +98,10 @@ nav a {
   border-top: 2px solid;
 }
 
+.street-jam-festival img {
+  border-radius: 5px;
+}
+
 h2 {
   margin: 40px 0;
   font-family: 'Barlow Condensed', sans-serif;
@@ -112,7 +116,7 @@ p {
 }
 
 main {
-  padding: 0 10px;
+  padding: 40px 10px 0 10px;
 }
 
 main li {
@@ -158,12 +162,15 @@ main li {
 }
 
 .container-carousel {
+  width: 355px;
+  height: 355px;
   overflow: hidden;
   margin: 80px 0;
   border-radius: 5px;
 }
 
 .carousel {
+  height: 100%;
   display: flex;
   flex-flow: row nowrap;
   animation: carousel 10s infinite;
