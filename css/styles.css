@@ -153,7 +153,7 @@ main li {
 }
 
 .more-checkbox-street-jam-festival:checked ~ .more-content-street-jam-festival {
-  height: 190px;
+  height: 300px;
   -webkit-mask-image: none;
 }
 
@@ -208,7 +208,7 @@ main li {
 }
 
 .more-checkbox-tags:checked ~ .more-content-tags {
-  height: 148px;
+  height: 470px;
   -webkit-mask-image: none;
 }
 
@@ -219,7 +219,7 @@ main li {
 }
 
 .more-checkbox-skate:checked ~ .more-content-skate {
-  height: 1230px;
+  height: 1500px;
   -webkit-mask-image: none;
 }
 
