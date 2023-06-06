@@ -223,6 +223,10 @@ main li {
   -webkit-mask-image: none;
 }
 
+.musique .container-carousel {
+  margin-top: 0;
+}
+
 .street-food ul {
   padding: 0;
 }
