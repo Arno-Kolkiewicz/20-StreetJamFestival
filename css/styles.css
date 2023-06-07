@@ -24,7 +24,12 @@ header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: space-between;
   box-sizing: content-box;
+}
+
+header img {
+  height: 100px;
 }
 
 header .circle {
@@ -71,6 +76,7 @@ nav {
 }
 
 nav ul {
+  margin: 30px 0 15px 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -157,7 +163,7 @@ main li {
 }
 
 .more-checkbox-street-jam-festival:checked ~ .more-content-street-jam-festival {
-  height: 300px;
+  height: 400px;
   -webkit-mask-image: none;
 }
 
@@ -198,6 +204,7 @@ main li {
 }
 
 .hourly {
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -215,7 +222,7 @@ main li {
 }
 
 .more-checkbox-tags:checked ~ .more-content-tags {
-  height: 470px;
+  height: 570px;
   -webkit-mask-image: none;
 }
 
@@ -226,7 +233,7 @@ main li {
 }
 
 .more-checkbox-skate:checked ~ .more-content-skate {
-  height: 1500px;
+  height: 1840px;
   -webkit-mask-image: none;
 }
 
@@ -235,12 +242,12 @@ main li {
 }
 
 .street-food ul {
+  margin: 0;
   padding: 0;
 }
 
 .street-food li {
   min-height: 90px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -268,7 +275,7 @@ main li {
 }
 
 .sub-menu-checkbox-oh-my-b:checked ~ .sub-menu-oh-my-b {
-  height: 140px;
+  height: 160px;
   transition: all 2s;
 }
 
@@ -277,7 +284,7 @@ main li {
 }
 
 .sub-menu-checkbox-con-cilantro-wey:checked ~ .sub-menu-con-cilantro-wey {
-  height: 140px;
+  height: 210px;
   transition: all 2s;
 }
 
@@ -286,7 +293,7 @@ main li {
 }
 
 .sub-menu-checkbox-frankie-hot-dogs:checked ~ .sub-menu-frankie-hot-dogs {
-  height: 140px;
+  height: 160px;
   transition: all 2s;
 }
 
@@ -295,7 +302,7 @@ main li {
 }
 
 .sub-menu-checkbox-poke-paradise:checked ~ .sub-menu-poke-paradise {
-  height: 140px;
+  height: 160px;
   transition: all 2s;
 }
 
@@ -304,7 +311,7 @@ main li {
 }
 
 .sub-menu-checkbox-bretagne-ambulante:checked ~ .sub-menu-bretagne-ambulante {
-  height: 160px;
+  height: 210px;
   transition: all 2s;
 }
 
@@ -313,7 +320,7 @@ main li {
 }
 
 .sub-menu-checkbox-smoothies-stop:checked ~ .sub-menu-smoothies-stop {
-  height: 160px;
+  height: 190px;
   transition: all 2s;
 }
 
@@ -343,9 +350,19 @@ footer {
   color: white;
 }
 
+footer .logo-street-jam-festival-light {
+  padding: 0;
+} 
+
+footer .logo-street-jam-festival-light img{
+  height: 100px;
+  margin-bottom: 80px;
+}
+
 h3 {
+  font-family: 'Barlow Condensed', sans-serif;
   margin: 30px 0;
-  font-size: 23pt;
+  font-size: 40px;
 }
 
 footer a {
